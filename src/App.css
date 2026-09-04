@@ -1,0 +1,260 @@
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar img:first-child{
+  width: 200px;
+}
+.navbar .elements{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+align-items: center;
+text-align: center;
+margin-inline: auto;
+padding: 0;
+font-size: 18px;
+cursor: pointer;
+}
+.navbar .elements li{
+font-weight: 500;
+}
+a{text-decoration: none; color: black;}
+
+.navbar .react{
+animation: rotate infinite ease 2s ;
+}
+@keyframes rotate {
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+@media (max-width : 617px) {
+  body{
+    padding-inline: 10px;
+  }
+  .react{
+    display: none;
+  }
+}
+/* ........ */
+.hero-section{
+  background-color: #E3F1FF;
+  display: flex;
+ justify-content: space-between;
+ align-items: center; 
+ border-radius: 20px;
+ margin-block: 20px;
+ overflow: hidden;
+}
+.hero-section img {
+  width: 100%;
+  max-width: 600px; 
+  height: auto; 
+}
+.hero-section h1{
+  font-family: 'Times New Roman', Times, serif;
+}
+.hero-section article{
+  padding: 30px;
+}
+.recipes-section {
+margin-block: 50px;}
+.recipes-section h1{
+font-family: 'Times New Roman';
+}
+.recipes-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  gap: 20px;
+  padding: 10px;
+}
+
+.card {
+  width: 100%;
+  transition: all 0.3s;
+  border-radius: 10px;
+  padding: 10px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.card:hover {
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: all 0.3s;
+  border-radius: 8px;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+.view-recipe {
+  font-size: 17px;
+  display: block;
+  background-color: white;
+  border: 1.5px solid black;
+  padding: 8px 15px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 10px auto 0;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.view-recipe:hover {
+  background-color: black;
+  color: white;
+}
+.popular{
+  padding: 5px 10px;
+  background-color: rgb(255, 173, 80);
+  color: white;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 5px orange ;
+}
+.rate{
+  font-family: 'Times New Roman';
+  background-color: rgb(255, 217, 0);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+  text-shadow: 1px 1px 5px black;
+}
+.view-recipe{
+  font-size: 17px;
+  display: block;
+  background-color: white;
+  border: 1.5px solid black;
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 10px auto;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+@media (max-width:877px) {
+  .hero-section{
+    flex-direction: column-reverse;
+  width: 100%;
+  }
+}
+/* Footer Styles */
+.footer {
+  background-color: #E3F1FF;
+  color: #333;
+  padding-top: 40px;
+  margin-top: 60px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 30px 20px;
+}
+
+/* Logo & Brand Styling */
+.footer-logo-img {
+  width: 180px;
+  height: auto;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.footer-box h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.footer-box p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #444;
+  font-size: 15px;
+  transition: color 0.3s, padding-left 0.3s;
+}
+
+.footer-links a:hover {
+  color: rgb(255, 140, 0);
+  padding-left: 5px;
+}
+
+/* Newsletter Form */
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.newsletter-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+}
+
+.newsletter-form button {
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.newsletter-form button:hover {
+  background-color: rgb(255, 173, 80);
+  color: #000;
+}
+
+/* Copyright Bottom Bar */
+.footer-bottom {
+  text-align: center;
+  padding: 15px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  font-size: 14px;
+  color: #666;
+}
